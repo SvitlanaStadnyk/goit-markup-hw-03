@@ -78,8 +78,8 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .top-logo {
@@ -89,8 +89,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: block;
   align-items: center;
   margin-right: 50px;
@@ -106,8 +106,8 @@ body {
 
 .top-item {
   margin-right: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .top-item:last-child {
@@ -117,8 +117,8 @@ body {
 .top-contacts {
   display: flex;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .top-link:hover,
