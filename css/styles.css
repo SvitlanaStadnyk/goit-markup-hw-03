@@ -29,19 +29,12 @@ img {
   display: block;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-  outline: 1px solid #eeeeee;
-}
 body {
   background-color: var(--white-color);
   color: var(--main-text-color);
   font-family: 'Roboto', sans-serif;
 }
-
+/*Утилиты*/
 .list {
   list-style: none;
 }
@@ -53,20 +46,42 @@ body {
   border: none;
   cursor: pointer;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid #eeeeee;
+}
 
 /* top-line */
+
+.top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .top {
   background-color: var(--white-color);
 }
+
+.top-list {
+  display: flex;
+  align-items: center;
+}
+
 .top-nav {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
+
 .top-logo {
   font-family: 'Raleway', sans-serif;
   color: var(--black-color);
@@ -74,8 +89,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: block;
+  align-items: center;
+  margin-right: 50px;
 }
 
 .top-logo-part {
@@ -84,6 +102,23 @@ body {
 
 .top-accent {
   color: var(--accent-color);
+}
+
+.top-item {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.top-item:last-child {
+  margin-right: 0;
+}
+
+.top-contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .top-link:hover,
@@ -138,7 +173,15 @@ body {
   color: var(--white-color);
   background-color: var(--dark-grey-color);
   text-transform: uppercase;
-  padding: 200px 52px 280px 52px;
+  margin: 200px 252px 30px 252px;
+
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .header-btn {
@@ -147,6 +190,14 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  width: fit-content;
+  text-align: center;
+  box-sizing: content-box;
+  border-radius: 4px;
 }
 
 .header-btn:hover,
@@ -169,6 +220,18 @@ body {
 .visually-hidden {
   color: var(--white-color);
 }
+.features-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.features-item {
+  margin-right: 30px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
 
 .features-title {
   font-weight: 700;
@@ -177,6 +240,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .features-text {
   font-weight: 400;
@@ -184,6 +249,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  text-align: left;
 }
 
 .about {
