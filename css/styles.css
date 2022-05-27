@@ -7,6 +7,7 @@
   --main-btn-color: #f5f4fa;
   --dark-grey-color: #2f303a;
   --black-color: #000000;
+  --border-color: #eeeeee;
 }
 
 p,
@@ -51,7 +52,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 0.5px solid gainsboro;
 }
 
 .section {
@@ -69,7 +69,9 @@ body {
 
 .top {
   background-color: var(--white-color);
-  outline: 1px solid #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-right-radius: var(--border-color);
 }
 
 .top-list {
@@ -94,7 +96,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   padding-top: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   display: block;
   align-items: center;
   margin-right: 50px;
@@ -202,6 +204,7 @@ body {
   color: var(--white-color);
   font-style: normal;
   padding-bottom: 9px;
+  display: block;
 }
 
 .address-list {
@@ -212,16 +215,19 @@ body {
   line-height: 1.71;
   font-style: normal;
   margin-top: 20px;
+  display: block;
 }
 
 .mail-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   padding-bottom: 9px;
+  display: block;
 }
 .tel-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  display: block;
 }
 
 .address-link:hover,
@@ -244,7 +250,15 @@ body {
 /*index-header*/
 .header {
   background-color: var(--dark-grey-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-title {
   font-weight: 900;
   font-size: 44px;
@@ -253,13 +267,10 @@ body {
   color: var(--white-color);
   background-color: var(--dark-grey-color);
   text-transform: uppercase;
-  margin: 200px 252px 30px 252px;
   text-align: center;
-}
-
-.header .container {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .header-btn {
@@ -268,11 +279,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 200px;
   padding: 10px 32px;
   width: fit-content;
+  margin: 0 auto;
   text-align: center;
   box-sizing: content-box;
   border-radius: 4px;
@@ -333,7 +342,7 @@ body {
   color: var(--main-text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: auto;
 }
 .features-text {
   font-weight: 400;
@@ -341,7 +350,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  text-align: left;
+  width: 270px;
 }
 
 /*index-about-us*/
@@ -383,6 +392,12 @@ body {
 
 .team-item {
   margin-right: 30px;
+  background-color: var(--white-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .team-item:last-child {
@@ -396,10 +411,6 @@ body {
   color: var(--main-text-color);
   text-align: center;
   margin-bottom: 50px;
-}
-
-.team-item {
-  background-color: var(--white-color);
 }
 
 .team-img {
@@ -440,8 +451,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 34px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .filters-item {
@@ -491,7 +501,7 @@ body {
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--main-text-color);
-  background-color: var(--main-btn-color);
+  background-color: var(--accent-color);
 }
 
 /*portfolio-project*/
@@ -499,13 +509,11 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 }
 
 .project-item {
   margin: 15px;
-  flex-basis: calc(100% / 3-30px);
-  outline: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-item:nth-child(3n + 3) {
@@ -535,7 +543,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
   padding-bottom: 4px;
 }
 
@@ -550,10 +557,22 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
 }
 
 .project-description:hover,
 .project-link:focus {
   background-color: var(--white-color);
+}
+
+.project-text {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-color);
+  padding: 20px 24px;
 }
