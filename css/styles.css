@@ -71,7 +71,7 @@ body {
   background-color: var(--white-color);
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-right-radius: var(--border-color);
+  border-bottom-color: var(--border-color);
 }
 
 .top-list {
